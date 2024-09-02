@@ -1,39 +1,27 @@
-# Bookshelf App Starter Project
+# Bookshelf App
 
-Ini adalah starter project untuk siswa yang sedang mengerjakan tugas akhir kelas Belajar Membuat Front-End Web untuk Pemula.
+Bookshelf App adalah aplikasi web sederhana yang memungkinkan pengguna untuk menambahkan, mengedit, menghapus, dan mencari buku. Buku dapat dikategorikan sebagai "Belum selesai dibaca" atau "Selesai dibaca", dan data buku disimpan di localStorage browser.
 
-## Ketentuan Pengerjaan Tugas
+## Fitur
 
-Untuk mempermudah penilaian submission yang dikirim, Anda perlu memahami ketentuan-ketentuan berikut dalam mengerjakan tugas ini.
+- **Tambah Buku Baru**: Formulir untuk menambahkan buku dengan judul, penulis, tahun terbit, dan status selesai dibaca.
+- **Edit Buku**: Ubah detail buku yang sudah ada.
+- **Hapus Buku**: Hapus buku dari daftar.
+- **Cari Buku**: Cari buku berdasarkan judul.
+- **Tampilan Responsif**: Antarmuka yang responsif dan dapat menyesuaikan dengan berbagai ukuran layar.
 
-- Anda dilarang mengedit atau menghapus atribut `data-testid` pada elemen-elemen HTML.
-- Ini masih berkaitan dengan poin sebelumnya. Jika Anda memiliki kebutuhan seperti styling elemen dan perlu menambahkan atribut seperti class, itu tidak dilarang selama atribut `data-testid` beserta nilainya tidak diubah atau dihapus.
-- Dalam menampilkan data-data buku, Anda wajib memberikan beberapa atribut pada setiap elemennya.
+## Teknologi
 
-  - `data-bookid`: menampung nilai ID masing-masing buku.
-  - `data-testid`: penanda jenis data buku yang ditampilkan. Berikut daftarnya.
-    - `bookItem`: elemen kontainer yang menampung data-data buku.
-    - `bookItemTitle`: judul buku
-    - `bookItemAuthor`: penulis buku
-    - `bookItemYear`: tahun rilis buku
-    - `bookItemIsCompleteButton`: tombol untuk mengubah kondisi buku dari “Belum selesai dibaca” menjadi “Selesai dibaca” atau sebaliknya.
-    - `bookItemDeleteButton`: tombol untuk menghapus buku.
-    - `bookItemEditButton`: tombol untuk mengubah data buku.
+- **HTML**: Struktur dasar halaman.
+- **CSS**: Styling dan layout responsif.
+- **JavaScript**: Interaktivitas dan manajemen data buku.
+- **SweetAlert2**: Library untuk menampilkan notifikasi yang lebih baik.
 
-  Agar pengerjaan tugas lebih mudah, Anda dapat mengikuti templat buku berikut.
+## Struktur Proyek
 
-```html
-<div data-bookid="{{ ID_buku }}" data-testid="bookItem">
-  <h3 data-testid="bookItemTitle">{{ judul_buku }}</h3>
-  <p data-testid="bookItemAuthor">Penulis: {{ penulis_buku }}</p>
-  <p data-testid="bookItemYear">Tahun: {{ tahun_rilis_buku }}</p>
-  <div>
-    <button data-testid="bookItemIsCompleteButton">{{ tombol_untuk_ubah_kondisi }}</button>
-    <button data-testid="bookItemDeleteButton">{{ tombol_untuk_hapus }}</button>
-    <button data-testid="bookItemEditButton">{{ tombol_untuk_edit }}</button>
-  </div>
-</div>
-```
+- `index.html`: Halaman utama aplikasi.
+- `style.css`: File CSS untuk styling aplikasi.
+- `main.js`: File JavaScript untuk logika aplikasi.
+- `README.md`: Dokumentasi proyek ini.
 
-Selamat mengerjakan dan sukses selalu!
 # bookshelf-app
