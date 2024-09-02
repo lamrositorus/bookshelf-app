@@ -1,0 +1,241 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F1F3C2;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 210vh;
+    height: 10vh;
+    border: 1px solid black;
+    background-color: #A1D6B2;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vh;
+    gap: 10px;
+    padding: 10px;
+}
+
+.container-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #CEDF9F;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    gap: 10px;
+
+}
+
+.label {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.input {
+    flex-grow: 1;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.button {
+    width: 100%;
+    background-color: #E8B86D;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.action {
+    display: flex;
+
+}
+
+.button:hover {
+    background-color: #F1F3C2;
+    color: black;
+}
+
+.button1 {
+    width: 50%;
+    background-color: #E8B86D;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: #F1F3C2;
+    color: black;
+}
+
+form#searchBook {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+input#searchBookTitle {
+    flex-grow: 1;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button#searchSubmit {
+    width: 100px;
+    padding: 5px;
+}
+
+.container-form {
+    width: 100%;
+}
+
+.book-list {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+hr{
+    width: 100%;
+    border: 1px solid black;
+}
+
+@media screen and (min-width: 912px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 174vh;
+
+        .container-section {
+            flex: 1 1 calc(50% - 20px);
+
+        }
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        width: 172vh;
+    }
+
+    #search {
+        width: 100%;
+        height: 29.3vh;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 912px) {
+    header {
+        width: 80vh;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 0px;
+        width: 82vh;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin: 0px;
+        width: auto;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    main {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .container-section {
+        margin: 0px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .action {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button1 {
+        width: 100%;
+    }
+
+    #searchBook {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+
+    }
+
+    #bookForm {
+        width: 100%;
+    }
+
+    button#searchSubmit {
+        width: 100%;
+    }
+}
