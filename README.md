@@ -25,3 +25,9 @@ Bookshelf App adalah aplikasi web sederhana yang memungkinkan pengguna untuk men
 - `README.md`: Dokumentasi proyek ini.
 
 # bookshelf-app
+![image](https://github.com/user-attachments/assets/b580d7f1-204f-40b7-9d85-a2937ba01a7e)
+
+![image](https://github.com/user-attachments/assets/3bf480ed-bf6a-4a9a-aa97-d4f2a815fe0b)
+
+![image](https://github.com/user-attachments/assets/ada895a7-186f-478f-825c-90bc7906db8c)
+
